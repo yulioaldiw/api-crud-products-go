@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "936ae1fa-7662-4495-9dee-02e7733a926e",
+		"name": "Products API Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14630197"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Product C\",\r\n    \"quantity\": 10,\r\n    \"price\": 49.99,\r\n    \"store\": {\r\n        \"id\": \"7cedb98d-3fdc-4110-aa69-bac63227df0d\",\r\n        \"name\": \"Amel Store\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Product\",\r\n    \"quantity\": 10,\r\n    \"price\": 49.99,\r\n    \"store\": {\r\n        \"id\": \"07561bc1-dc69-4c4e-ae8a-a57a16f15cd5\",\r\n        \"name\": \"Amel Mart\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products/9fb859d1-d27d-4331-8621-14af53b99588",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Product\",\r\n    \"quantity\": 10,\r\n    \"price\": 49.99,\r\n    \"store\": {\r\n        \"id\": \"07561bc1-dc69-4c4e-ae8a-a57a16f15cd5\",\r\n        \"name\": \"Amel Mart\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/9fb859d1-d27d-4331-8621-14af53b99588",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"9fb859d1-d27d-4331-8621-14af53b99588"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products/65143c4f-0cb4-4d42-872f-fbad0210bcff",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Product\",\r\n    \"quantity\": 10,\r\n    \"price\": 49.99,\r\n    \"store\": {\r\n        \"id\": \"07561bc1-dc69-4c4e-ae8a-a57a16f15cd5\",\r\n        \"name\": \"Amel Mart\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/65143c4f-0cb4-4d42-872f-fbad0210bcff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"65143c4f-0cb4-4d42-872f-fbad0210bcff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/products/9fb859d1-d27d-4331-8621-14af53b99588",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"9fb859d1-d27d-4331-8621-14af53b99588\",\r\n    \"name\": \"My Product B\",\r\n    \"quantity\": 5,\r\n    \"price\": 99.99,\r\n    \"store\": {\r\n        \"id\": \"7cedb98d-3fdc-4110-aa69-bac63227df0d\",\r\n        \"name\": \"Amel Store\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/9fb859d1-d27d-4331-8621-14af53b99588",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"9fb859d1-d27d-4331-8621-14af53b99588"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
